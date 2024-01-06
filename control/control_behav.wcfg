@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="control_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="control" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="160950090fs"></ZoomStartTime>
+      <ZoomEndTime time="161001291fs"></ZoomEndTime>
+      <Cursor1Time time="160991640fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="171"></NameColumnWidth>
+      <ValueColumnWidth column_width="90"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="12" />
+   <wvobject fp_name="/control/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/control/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/control/irq" type="array">
+      <obj_property name="ElementShortName">irq[1:0]</obj_property>
+      <obj_property name="ObjectShortName">irq[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/control/rw" type="logic">
+      <obj_property name="ElementShortName">rw</obj_property>
+      <obj_property name="ObjectShortName">rw</obj_property>
+   </wvobject>
+   <wvobject fp_name="/control/datain" type="array">
+      <obj_property name="ElementShortName">datain[3:0]</obj_property>
+      <obj_property name="ObjectShortName">datain[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/control/pcontrol" type="array">
+      <obj_property name="ElementShortName">pcontrol[7:0]</obj_property>
+      <obj_property name="ObjectShortName">pcontrol[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/control/rc" type="array">
+      <obj_property name="ElementShortName">rc[3:0]</obj_property>
+      <obj_property name="ObjectShortName">rc[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/control/pcout" type="array">
+      <obj_property name="ElementShortName">pcout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">pcout[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/control/cs" type="array">
+      <obj_property name="ElementShortName">cs[4:0]</obj_property>
+      <obj_property name="ObjectShortName">cs[4:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/control/edo_presente" type="other">
+      <obj_property name="ElementShortName">edo_presente</obj_property>
+      <obj_property name="ObjectShortName">edo_presente</obj_property>
+   </wvobject>
+   <wvobject fp_name="/control/edo_futuro" type="other">
+      <obj_property name="ElementShortName">edo_futuro</obj_property>
+      <obj_property name="ObjectShortName">edo_futuro</obj_property>
+   </wvobject>
+   <wvobject fp_name="/control/f" type="array">
+      <obj_property name="ElementShortName">f[7:0]</obj_property>
+      <obj_property name="ObjectShortName">f[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+</wave_config>

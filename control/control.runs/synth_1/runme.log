@@ -1,0 +1,300 @@
+
+*** Running vivado
+    with args -log control.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source control.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source control.tcl -notrace
+Command: synth_design -top control -part xc7s75fgga676-1IL
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s75'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s75'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16828 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 573.551 ; gain = 243.113
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'control' [C:/Users/cerva/Escritorio/F.Prog/Arquitectura de PC/control/control.srcs/sources_1/new/control.vhd:48]
+WARNING: [Synth 8-614] signal 'cs' is read in the process but is not in the sensitivity list [C:/Users/cerva/Escritorio/F.Prog/Arquitectura de PC/control/control.srcs/sources_1/new/control.vhd:55]
+WARNING: [Synth 8-614] signal 'datain' is read in the process but is not in the sensitivity list [C:/Users/cerva/Escritorio/F.Prog/Arquitectura de PC/control/control.srcs/sources_1/new/control.vhd:55]
+WARNING: [Synth 8-614] signal 'rc' is read in the process but is not in the sensitivity list [C:/Users/cerva/Escritorio/F.Prog/Arquitectura de PC/control/control.srcs/sources_1/new/control.vhd:55]
+WARNING: [Synth 8-614] signal 'pcontrol' is read in the process but is not in the sensitivity list [C:/Users/cerva/Escritorio/F.Prog/Arquitectura de PC/control/control.srcs/sources_1/new/control.vhd:55]
+WARNING: [Synth 8-614] signal 'pcout' is read in the process but is not in the sensitivity list [C:/Users/cerva/Escritorio/F.Prog/Arquitectura de PC/control/control.srcs/sources_1/new/control.vhd:55]
+WARNING: [Synth 8-614] signal 'f' is read in the process but is not in the sensitivity list [C:/Users/cerva/Escritorio/F.Prog/Arquitectura de PC/control/control.srcs/sources_1/new/control.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'control' (1#1) [C:/Users/cerva/Escritorio/F.Prog/Arquitectura de PC/control/control.srcs/sources_1/new/control.vhd:48]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 646.234 ; gain = 315.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 646.234 ; gain = 315.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s75fgga676-1IL
+INFO: [Device 21-403] Loading part xc7s75fgga676-1IL
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 646.234 ; gain = 315.797
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/cerva/Escritorio/F.Prog/Arquitectura de PC/control/control.srcs/sources_1/new/control.vhd:224]
+WARNING: [Synth 8-327] inferring latch for variable 'rw_reg' [C:/Users/cerva/Escritorio/F.Prog/Arquitectura de PC/control/control.srcs/sources_1/new/control.vhd:60]
+WARNING: [Synth 8-327] inferring latch for variable 'pcontrol_reg' [C:/Users/cerva/Escritorio/F.Prog/Arquitectura de PC/control/control.srcs/sources_1/new/control.vhd:59]
+WARNING: [Synth 8-327] inferring latch for variable 'cs_reg' [C:/Users/cerva/Escritorio/F.Prog/Arquitectura de PC/control/control.srcs/sources_1/new/control.vhd:61]
+WARNING: [Synth 8-327] inferring latch for variable 'edo_futuro_reg' [C:/Users/cerva/Escritorio/F.Prog/Arquitectura de PC/control/control.srcs/sources_1/new/control.vhd:58]
+WARNING: [Synth 8-327] inferring latch for variable 'f_reg' [C:/Users/cerva/Escritorio/F.Prog/Arquitectura de PC/control/control.srcs/sources_1/new/control.vhd:216]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 646.234 ; gain = 315.797
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	  19 Input      8 Bit        Muxes := 2     
+	   3 Input      5 Bit        Muxes := 1     
+	  19 Input      5 Bit        Muxes := 2     
+	  18 Input      4 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	  14 Input      1 Bit        Muxes := 2     
+	  19 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module control 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	  19 Input      8 Bit        Muxes := 2     
+	   3 Input      5 Bit        Muxes := 1     
+	  19 Input      5 Bit        Muxes := 2     
+	  18 Input      4 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	  14 Input      1 Bit        Muxes := 2     
+	  19 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 140 (col length:80)
+BRAMs: 180 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'f_reg[3]' (LD) to 'f_reg[7]'
+INFO: [Synth 8-3886] merging instance 'f_reg[4]' (LD) to 'f_reg[7]'
+INFO: [Synth 8-3886] merging instance 'f_reg[5]' (LD) to 'f_reg[7]'
+INFO: [Synth 8-3886] merging instance 'f_reg[6]' (LD) to 'f_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\f_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (f_reg[7]) is unused and will be removed from module control.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 798.195 ; gain = 467.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|control     | rw         | 32x1          | LUT            | 
+|control     | rw         | 32x1          | LUT            | 
+|control     | rw         | 32x1          | LUT            | 
+|control     | rw         | 32x1          | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 800.344 ; gain = 469.906
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 800.344 ; gain = 469.906
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 800.344 ; gain = 469.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 800.344 ; gain = 469.906
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 800.344 ; gain = 469.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 800.344 ; gain = 469.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 800.344 ; gain = 469.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 800.344 ; gain = 469.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     2|
+|3     |LUT1   |     2|
+|4     |LUT2   |     8|
+|5     |LUT3   |     4|
+|6     |LUT4   |     9|
+|7     |LUT5   |     7|
+|8     |LUT6   |    20|
+|9     |MUXF7  |     1|
+|10    |FDRE   |     5|
+|11    |LD     |     3|
+|12    |LDC    |     7|
+|13    |LDP    |    12|
+|14    |IBUF   |    20|
+|15    |OBUF   |    14|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   115|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 800.344 ; gain = 469.906
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 800.344 ; gain = 469.906
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 800.344 ; gain = 469.906
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 813.445 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 25 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 911.496 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 22 instances were transformed.
+  LD => LDCE: 3 instances
+  LDC => LDCE: 7 instances
+  LDP => LDPE: 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+17 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 911.496 ; gain = 605.934
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 911.496 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/cerva/Escritorio/F.Prog/Arquitectura de PC/control/control.runs/synth_1/control.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file control_utilization_synth.rpt -pb control_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun May 21 18:33:57 2023...
