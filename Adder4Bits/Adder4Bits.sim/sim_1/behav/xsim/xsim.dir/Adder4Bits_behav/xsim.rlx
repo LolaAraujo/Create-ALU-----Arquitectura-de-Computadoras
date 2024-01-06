@@ -1,0 +1,12 @@
+
+{ 
+    crc :  3841694551794738902  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto cd8ea434152c485a87d1b8c1ef657652 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Adder4Bits_behav xil_defaultlib.Adder4Bits" , 
+    buildDate : "Nov  6 2019" , 
+    buildTime : "21:57:16" , 
+    linkCmd : "D:\\Vivado\\2019.2\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/Adder4Bits_behav/xsimk.exe\"   \"xsim.dir/Adder4Bits_behav/obj/xsim_0.win64.obj\" \"xsim.dir/Adder4Bits_behav/obj/xsim_1.win64.obj\" -L\"D:\\Vivado\\2019.2\\lib\\win64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 
