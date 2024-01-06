@@ -1,0 +1,1 @@
+-wto "c1b6939aefa94f76b6c2f0fb6e29a938" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "DecoBINHEX_behav" "xil_defaultlib.DecoBINHEX" -log "elaborate.log" 

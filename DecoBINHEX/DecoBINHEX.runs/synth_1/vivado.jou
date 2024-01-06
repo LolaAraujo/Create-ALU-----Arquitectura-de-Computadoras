@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Feb 21 19:45:45 2023
+# Process ID: 16340
+# Current directory: C:/Users/cerva/Escritorio/F.Prog/Arquitectura de PC/DecoBINHEX/DecoBINHEX.runs/synth_1
+# Command line: vivado.exe -log DecoBINHEX.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DecoBINHEX.tcl
+# Log file: C:/Users/cerva/Escritorio/F.Prog/Arquitectura de PC/DecoBINHEX/DecoBINHEX.runs/synth_1/DecoBINHEX.vds
+# Journal file: C:/Users/cerva/Escritorio/F.Prog/Arquitectura de PC/DecoBINHEX/DecoBINHEX.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source DecoBINHEX.tcl -notrace
