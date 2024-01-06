@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue May  9 16:17:21 2023
+# Process ID: 27540
+# Current directory: C:/Users/cerva/Escritorio/F.Prog/Arquitectura de PC/tri_est/tri_est.runs/synth_1
+# Command line: vivado.exe -log tri_est.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tri_est.tcl
+# Log file: C:/Users/cerva/Escritorio/F.Prog/Arquitectura de PC/tri_est/tri_est.runs/synth_1/tri_est.vds
+# Journal file: C:/Users/cerva/Escritorio/F.Prog/Arquitectura de PC/tri_est/tri_est.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source tri_est.tcl -notrace
