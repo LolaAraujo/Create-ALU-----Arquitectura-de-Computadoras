@@ -1,6 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../tri_est.srcs/sources_1/new/tri_est.vhd" \
-
-# Do not sort compile order
-nosort
